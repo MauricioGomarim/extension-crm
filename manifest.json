@@ -1,0 +1,27 @@
+{
+    "name": "WhatsApp Sidebar",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://web.whatsapp.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["content_script.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["sidebar.html"],
+        "matches": ["https://web.whatsapp.com/*"]
+      }
+    ],
+    "action": {
+      "default_title": "Abrir Sidebar"
+    }
+  }
+  

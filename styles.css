@@ -1,0 +1,29 @@
+#whatsapp-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 300px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Mantém a rolagem funcionando corretamente */
+  .x78zum5.xdt5ytf.x5yr21d {
+    width: 100%;
+    height: 100%;
+    overflow: auto !important;
+  }
+  
+  /* Configuração da barra lateral */
+  #whatsapp-sidebar {
+    background: white;
+    border-left: 2px solid #ddd;
+    height: 100vh;
+    width: 300px;
+    overflow-y: auto;
+  }
+  
+  #whatsapp-sidebar iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
